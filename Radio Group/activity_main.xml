@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="179dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="184dp"
+        android:gravity="center"
+        android:text="@string/text_view"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="262dp"
+        android:layout_height="244dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/pizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pizza"
+            android:textColor="@color/color_radio" />
+
+        <RadioButton
+            android:id="@+id/burger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/burger"
+            android:textColor="#1976D2" />
+
+        <RadioButton
+            android:id="@+id/steak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/steak"
+            android:textColor="@color/color_radio" />
+
+        <RadioButton
+            android:id="@+id/pepsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pepsi"
+            android:textColor="@color/color_radio" />
+
+        <RadioButton
+            android:id="@+id/cake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cake"
+            android:textColor="@color/color_radio" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
